@@ -76,8 +76,8 @@
     function showRemaining (){
     now = new Date();
  
-    days_in_this_month = new Date( now.getFullYear(), now.getMonth()+1, 0).getDate(); 
-     days = days_in_this_month- now.getDate();
+    
+    days = 0;
     hours = 23 - now.getHours();
     minutes = 59 - now.getMinutes();
     seconds = 59 - now.getSeconds();
@@ -98,14 +98,4 @@ CountDownTimer() ;
 
 <body>
     
-    <!-- <div id="counter"> -->
-    <!-- <h2>
-        Time left today
-    </h2> -->
-    
-        <!-- <h2 class="box" id="days"></h2> -->
-        <h2 class="box" id="hours"></h2>
-        <h2 class="box" id="minutes"></h2>
-    <!-- </div> -->
-
 
