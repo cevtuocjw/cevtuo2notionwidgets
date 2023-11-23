@@ -84,7 +84,9 @@
         minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
         seconds = Math.floor((distance % (1000 * 60)) / 1000);
         
-
+        if (days < 0) days +=1;
+        if (hours < 0) days += 1;
+        if (minustes < 0) minutes += 1;
         
         left_days.innerHTML = days + "<br> <span class=\"small\"> days </span>";
         left_hours.innerHTML = hours + "<br> <span class=\"small\"> hours</span>";
